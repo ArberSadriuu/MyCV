@@ -19,7 +19,9 @@ const Header: React.FC = () => {
             <a href="#about" className="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">{t('nav.about')}</a>
             <a href="#skills" className="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">{t('nav.skills')}</a>
             <a href="#portfolio" className="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">{t('nav.portfolio')}</a>
-            <a href="#contact" className="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-dark transition-colors shadow-md hover:shadow-lg">{t('nav.contact')}</a>
+            <a href="#contact" className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg">{t('nav.contact')}
+</a>
+
             <div className="ml-4">
               <LanguageSwitcher />
             </div>

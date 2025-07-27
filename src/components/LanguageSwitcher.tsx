@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaGlobe } from 'react-icons/fa';
+import 'flag-icons/css/flag-icons.min.css';
 
 const languages = [
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'sq', label: 'Shqip', flag: '🇦🇱' },
+  { code: 'en', label: 'English', flag: 'gb' },
+  { code: 'sq', label: 'Shqip', flag: 'al' },
 ];
 
 const LanguageSwitcher: React.FC = () => {
@@ -44,7 +45,7 @@ const LanguageSwitcher: React.FC = () => {
                   }}
                   className="w-full text-left flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 >
-                  <span className="mr-3 text-lg">{lang.flag}</span>
+                  <span className={`fi fi-${lang.flag} mr-3 w-5 h-3 rounded-sm`}></span>
                   {lang.label}
                 </button>
               </li>
@@ -56,4 +57,4 @@ const LanguageSwitcher: React.FC = () => {
   );
 };
 
-export default LanguageSwitcher; 
+export default LanguageSwitcher;

@@ -7,13 +7,14 @@ export const translation = {
   },
   hero: {
     hi: 'Hi, I am',
-    name: 'Tomasz Gajda',
-    title: 'Front-end Developer / UI Designer',
+    name: 'Arber Sadriu',
+    title: 'Front end Developer',
   },
   about: {
-    heading: 'IT BERRIES',
-    text: 'Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est. Morbi commodo, eros in dignissim tempus, lacus odio rutrum augue, in semper sem magna quis tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet elit. Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet varius turpis vel pharetra. Ut ante justo, consequat vitae elementum tempor, accumsan nec eros.',
+    heading: 'About me',
+    text: 'Hi, I\'m Arber a passionate Front-End Developer with a strong focus on creating clean, responsive, and user friendly web interfaces. I work mainly with React, TypeScript, and Tailwind CSS to build modern websites and web applications. I enjoy transforming ideas into real digital experiences, always focusing on performance and design consistency. Currently, I\'m expanding my skills and exploring new technologies to become a more complete developer. I\'m always open to new opportunities where I can contribute, learn, and grow. Let\'s build something great together.',
     readMore: 'READ MORE',
+    more: 'In addition to my technical skills, I am committed to continuous learning and professional growth. I thrive in collaborative environments and value clear communication, attention to detail, and creative problem solving. My goal is to deliver high-quality solutions that exceed client expectations and contribute positively to every team I join. I am eager to take on new challenges and make a meaningful impact in the tech industry.'
   },
   skills: {
     heading: 'Skills',
@@ -28,7 +29,7 @@ export const translation = {
   },
   contact: {
     heading: 'Get In Touch',
-    text: "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    text: '',
     copyright: 'All Rights Reserved.'
   }
 };
