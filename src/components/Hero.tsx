@@ -2,6 +2,8 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { useFadeInOnView } from './useFadeInOnView';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+
 
 const Hero: React.FC = () => {
   const { ref, fadeInClass } = useFadeInOnView();
@@ -14,13 +16,56 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-            <p className="text-xl text-gray-600 mb-3 tracking-wide">{t('hero.hi')}</p>
-            <h1 className="text-7xl font-bold text-charcoal mb-4">{t('hero.name')}</h1>
-            <p className="text-2xl text-primary font-medium mb-8">{t('hero.title')}</p>
+            <motion.p
+              className="text-xl text-gray-600 mb-3 tracking-wide"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+            >
+              {t('hero.hi')}
+            </motion.p>
+
+            <motion.h1
+              className="text-7xl font-bold text-charcoal mb-4"
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: { opacity: 1 },
+                visible: {
+                  transition: {
+                    staggerChildren: 0.05,
+                  },
+                },
+              }}
+            >
+              {[...t('hero.name')].map((char, index) => (
+                <motion.span
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
+                  className="inline-block"
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </motion.h1>
+
+            <motion.p
+              className="text-2xl text-primary font-medium mb-8"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 0.6, ease: 'easeOut' }}
+            >
+              {t('hero.title')}
+            </motion.p>
+
             <div className="flex justify-center md:justify-start space-x-6">
-              <a href="mailto:your-email@example.com" className="text-gray-600 hover:text-primary transition-transform duration-300 hover:scale-110"><FaEnvelope size={28} /></a>
-              <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-transform duration-300 hover:scale-110"><FaGithub size={28} /></a>
-              <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-transform duration-300 hover:scale-110"><FaLinkedin size={28} /></a>
+              <a href="mailto:sadriuarber55@gmail.com" className="text-gray-600 hover:text-primary transition-transform duration-300 hover:scale-110"><FaEnvelope size={28} /></a>
+              <a href="https://github.com/ArberSadriuu" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-transform duration-300 hover:scale-110"><FaGithub size={28} /></a>
+              <a href="https://www.linkedin.com/in/arbersadriu/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-transform duration-300 hover:scale-110"><FaLinkedin size={28} /></a>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center items-center">

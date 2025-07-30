@@ -13,7 +13,7 @@ const About: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-5xl font-bold mb-6 tracking-wide">{t('about.heading')}</h2>
-          <p className="max-w-3xl mx-auto text-gray-300 mb-10 text-lg leading-relaxed">
+          <p className="max-w-3xl mx-auto text-black-300 mb-10 text-lg leading-relaxed">
             {t('about.text')}
           </p>
           <button
@@ -29,7 +29,7 @@ const About: React.FC = () => {
           <div className="relative bg-gradient-to-br from-white via-gray-50 to-gray-200 text-charcoal rounded-3xl shadow-2xl max-w-2xl w-full p-0 animate-fadeIn overflow-hidden border border-gray-100">
             {/* Modal Header with Accent Bar and Icon */}
             <div className="flex items-center px-8 py-6 bg-primary/90 border-b border-primary/20 relative">
-              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white flex-1 text-left">{t('about.heading')}</h3>
+              <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-black flex-1 text-left">{t('about.heading')}</h1>
               <button
                 onClick={() => setIsModalOpen(false)}
                 className="absolute top-4 right-4 text-black hover:text-primary-dark text-3xl font-bold focus:outline-none focus:ring-2 focus:ring-primary/40 transition-colors"
