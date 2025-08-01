@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const projects = [
   {
-    title: 'Gamified Habits',
+    title: 'Habits',
     description: 'A productivity app that helps users build habits through gamification and progress tracking.',
     imageUrl: '/public/assets/HabitFlow.jpg',
     link: 'https://gamified-habits.vercel.app/',
