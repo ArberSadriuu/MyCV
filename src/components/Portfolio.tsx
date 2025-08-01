@@ -6,20 +6,20 @@ const projects = [
   {
     title: 'Gamified Habits',
     description: 'A productivity app that helps users build habits through gamification and progress tracking.',
-    imageUrl: '/public/assets/Habit.jpg',
+    imageUrl: '/public/assets/HabitFlow.jpg',
     link: 'https://gamified-habits.vercel.app/',
   },
   {
-    title: 'Admin Dashboard',
+    title: 'NexBoard',
     description: 'A modern admin dashboard for managing users, analytics, and more. Built with a focus on usability and clean design.',
-    imageUrl: '/public/assets/admin.jpg',
+    imageUrl: '/public/assets/NexBoard.jpg',
     link: 'https://admin-dashboard-ruddy-tau-14.vercel.app/',
   },
   {
-    title: 'Brevity App',
+    title: 'SnapSummary',
     description: 'A concise note-taking and productivity app designed for efficiency and clarity.',
-    imageUrl: '/public/assets/brevity.jpg',
-    link: 'https://brevity-app.vercel.app/',
+    imageUrl: '/public/assets/SnapSummary.jpg',
+    link: 'https://snap-summary1.vercel.app/',
   },
 ];
 
@@ -46,10 +46,6 @@ const Portfolio: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute top-3 left-3 bg-primary/80 text-white text-xs px-4 py-1 rounded-full font-semibold shadow select-none pointer-events-none tracking-wide">
-                  {project.title}
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
               </div>
               <div className="p-7 flex flex-col items-start">
                 <h3 className="text-xl font-semibold text-charcoal mb-2 leading-tight group-hover:text-primary transition-colors duration-200">

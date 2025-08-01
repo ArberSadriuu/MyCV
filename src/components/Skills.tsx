@@ -46,11 +46,11 @@ const Skills: React.FC = () => {
           </div>
           <div className="mb-16">
             <h3 className="text-2xl font-semibold text-charcoal mb-8 uppercase tracking-widest">{t('skills.usingNow')}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-8 justify-items-center">
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-8 justify-items-center p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
               {usingNow.map((skill) => (
                 <div
                   key={skill.name}
-                  className={`flex flex-col items-center justify-center p-4 transition-transform duration-300 hover:scale-110 group ${skill.highlight ? 'animate-glow rounded-xl' : ''}`}
+                  className={`flex flex-col items-center justify-center p-4 transition-transform duration-300 hover:scale-110 group ${skill.highlight ? 'animate-glow rounded-xl bg-blue-50/50 p-6 border border-blue-200' : 'bg-gray-50/50 rounded-xl p-4 border border-gray-200'}`}
                 >
                   {skill.icon}
                   <span className={`mt-3 text-charcoal text-sm font-semibold transition-colors group-hover:text-primary ${skill.highlight ? 'font-bold text-primary' : ''}`}>{skill.name}</span>
@@ -60,9 +60,9 @@ const Skills: React.FC = () => {
           </div>
           <div className="mb-16">
             <h3 className="text-2xl font-semibold text-charcoal mb-8 uppercase tracking-widest">{t('skills.learning')}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-items-center">
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-8 justify-items-center p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
               {learning.map((skill) => (
-                <div key={skill.name} className="flex flex-col items-center justify-center p-4 transition-transform duration-300 hover:scale-110 group">
+                <div key={skill.name} className="flex flex-col items-center justify-center p-4 transition-transform duration-300 hover:scale-110 group bg-orange-50/50 rounded-xl p-4 border border-orange-200">
                   {skill.icon}
                   <span className="mt-3 text-charcoal text-sm font-semibold transition-colors group-hover:text-primary">{skill.name}</span>
                 </div>
@@ -71,9 +71,9 @@ const Skills: React.FC = () => {
           </div>
           <div>
             <h3 className="text-2xl font-semibold text-charcoal mb-8 uppercase tracking-widest">{t('skills.other')}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-8 justify-items-center">
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-8 justify-items-center p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
               {otherSkills.map((skill) => (
-                <div key={skill.name} className="flex flex-col items-center justify-center p-4 transition-transform duration-300 hover:scale-110 group">
+                <div key={skill.name} className="flex flex-col items-center justify-center p-4 transition-transform duration-300 hover:scale-110 group bg-green-50/50 rounded-xl p-4 border border-green-200">
                   {skill.icon}
                   <span className="mt-3 text-charcoal text-sm font-semibold transition-colors group-hover:text-primary">{skill.name}</span>
                 </div>

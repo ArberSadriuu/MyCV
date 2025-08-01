@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { useFadeInOnView } from './useFadeInOnView';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
@@ -63,7 +63,6 @@ const Hero: React.FC = () => {
             </motion.p>
 
             <div className="flex justify-center md:justify-start space-x-6">
-              <a href="mailto:sadriuarber55@gmail.com" className="text-gray-600 hover:text-primary transition-transform duration-300 hover:scale-110"><FaEnvelope size={28} /></a>
               <a href="https://github.com/ArberSadriuu" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-transform duration-300 hover:scale-110"><FaGithub size={28} /></a>
               <a href="https://www.linkedin.com/in/arbersadriu/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-transform duration-300 hover:scale-110"><FaLinkedin size={28} /></a>
             </div>
