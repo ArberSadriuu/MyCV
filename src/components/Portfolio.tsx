@@ -6,19 +6,19 @@ const projects = [
   {
     title: 'Habits',
     description: 'A productivity app that helps users build habits through gamification and progress tracking.',
-    imageUrl: '/public/assets/HabitFlow.jpg',
+    imageUrl: '/assets/HabitFlow.jpg',
     link: 'https://gamified-habits.vercel.app/',
   },
   {
     title: 'NexBoard',
     description: 'A modern admin dashboard for managing users, analytics, and more. Built with a focus on usability and clean design.',
-    imageUrl: '/public/assets/NexBoard.jpg',
+    imageUrl: '/assets/NexBoard.jpg',
     link: 'https://admin-dashboard-ruddy-tau-14.vercel.app/',
   },
   {
     title: 'SnapSummary',
     description: 'A concise note-taking and productivity app designed for efficiency and clarity.',
-    imageUrl: '/public/assets/SnapSummary.jpg',
+    imageUrl: '/assets/SnapSummary.jpg',
     link: 'https://snap-summary1.vercel.app/',
   },
 ];
