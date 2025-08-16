@@ -7,7 +7,7 @@ export const translation = {
   },
   hero: {
     hi: 'Pershendetje, une jam',
-    name: 'Arber Sadriu',
+    name: 'Arber  Sadriu',
     title: 'Front-end Zhvillues',
   },
   about: {
