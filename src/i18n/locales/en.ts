@@ -7,7 +7,7 @@ export const translation = {
   },
   hero: {
     hi: 'Hi, I am',
-    name: 'Arber Sadriu',
+    name: 'Arber  Sadriu',
     title: 'Front end Developer',
   },
   about: {
